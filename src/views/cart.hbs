@@ -1,0 +1,158 @@
+<div class="mapper">
+    <a href="/" class="mapper-item">
+        <span>Trang chủ</span>
+    </a>
+    <i class="fa-solid fa-angle-right"></i>
+    <span>Giỏ hàng</span>
+</div>
+
+
+
+<div class="container py-5"> 
+    <table class="table table-bordered table-hover" style="border-width: 0; position: relative">
+        <thead class="thead-dark">
+            <tr class="cart-label">
+                <th scope="col" style="width: 36px;">#</th>
+                <th scope="col">Sản phẩm</th>
+                <th scope="col">Đơn giá</th>
+                <th scope="col">Số lượng</th>
+                <th scope="col">Thành tiền</th>
+                <th scope="col" style="width: 50px; cursor: pointer;">
+                    <div title="Xóa tất cả" class="delelte-all-js" onclick="removeAllItems()">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="cart-list">
+        </tbody>
+    </table>
+</div>
+<div class="separate"></div>
+<div class="cash-out">
+    <div class="voucher-controll">
+        <div class="label">
+            <img src="../../img/logo/gift-voucher.png" alt="" class="icon">
+            <p class="title">ULibs Voucher</p>
+        </div>
+        <div class="voucher-choosing">
+            <a href="#">Chọn Hoặc Nhập Mã</a>
+        </div>
+    </div>
+    <div class="voucher-controll">
+        <div class="label">
+            <label>
+                <input type="checkbox" name="coin" id="coin" value="checked">
+            </label>
+            <img src="../../img/logo/coin.png" alt="" class="icon">
+            <p class="title">ULibs Xu</p>
+        </div>
+        <div class="choose-status" title="Hiện tại tính năng này của chúng tôi đang trong quá trình thử nghiệm. Chúng tôi sẽ release tính năng này sớm nhất có thể.">
+            Bạn chưa có ULibs Xu nào
+            <i class="fa-solid fa-circle-question"></i>
+        </div>
+        <div class="price-discount">
+            -0đ
+        </div>
+    </div>
+    <div class="total-price">
+        <div class="title">
+            Tổng thanh toán (0 Sản phẩm):
+        </div>
+        <div class="price">0 đ</div>
+        <button class="button-solid">Mua hàng</button>
+    </div>
+</div>
+<script>
+    cartItem = JSON.parse(localStorage.getItem('cart'))
+    if (cartItem){
+        cartItem.map(item => {
+                document.getElementById('cart-list').innerHTML += `
+                    <tr>
+                        <th scope="row"></th>
+                        <td>
+                            <div class="product-card">
+                                <div class="product__img">
+                                    <img src="${item.product.img}" alt="">
+                                </div>
+                                <div class="product__infomation">
+                                    <a href="${item.product.slug}" class="product__name">
+                                        ${item.product.name}
+                                    </a>
+                                    <span class="product__bookcare">Sách có thể bọc bằng <a href="/bookcare"> <img src="https://salt.tikicdn.com/ts/upload/27/4d/9c/babbc888efcb183d0f76c2fd5b2f98dc.png" alt="bookcare" width="60" height="11"></a></span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <span class="product__real-prices">
+                                    ${item.product.price}
+                                </span>
+                                <del class="product__discount-prices">${item.product.price}</del>
+                            </div>
+                        </td>
+                        <td>
+                                <div class="quantity d-flex flex-column flex-sm-row align-items-sm-center justify-content-center" style="margin-top: 0;">
+                                    <div class="quantity_selector quantity_selector-s">
+                                        <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                        <span id="quantity_value">${item.quantity}</span>
+                                        <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                                    </div>      
+                                </div>                   
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <span class="product__final-prices">${item.quantity * (item.product.price - item.product.price*0.3)}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center" style="cursor:pointer;" onclick="removeItem('${item.product.name}')" title="Xóa">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </div>
+                        </td>
+                    </tr>
+                `        
+            })        
+    }
+
+        // Format Money
+        const priceList = document.querySelectorAll('.product__discount-prices')
+        const currentPriceList = document.querySelectorAll('.product__real-prices')
+        const finalPriceList = document.querySelectorAll('.product__final-prices')
+
+        const saleOff = 30;
+
+
+        function formatPrice(price){
+            return price.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+        }
+        priceList.forEach((item) => {
+            let price = parseInt(item.innerText)
+            item.innerText = formatPrice(price.toString()) + ' đ' 
+        })
+        currentPriceList.forEach((item) => {
+            let price = parseInt(item.innerText) - (parseInt(item.innerText) * (saleOff/100))
+            item.innerText = formatPrice(price.toString()) + ' đ' 
+        })
+        finalPriceList.forEach((item) => {
+            let price = parseInt(item.innerText)
+            item.innerText = formatPrice(price.toString()) + ' đ' 
+        })
+
+        function removeItem(name){
+            let storage = localStorage.getItem('cart')
+            if(storage){
+                 cart = JSON.parse(storage);
+            }
+            cart = cart.filter(item => item.product.name != name)
+            localStorage.setItem('cart', JSON.stringify(cart));
+            location.reload();
+            console.log('success')
+        }
+
+        function removeAllItems(){
+            localStorage.removeItem("cart");
+            location.reload();
+        }
+
+</script>

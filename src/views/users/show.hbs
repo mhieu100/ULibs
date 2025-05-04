@@ -1,0 +1,462 @@
+<div class="mapper">
+    <a href="/" class="mapper-item">
+        <span>Trang chủ</span>
+    </a>
+    <i class="fa-solid fa-angle-right"></i>
+    <span>Thông tin tài khoản</span>
+</div>
+<div class="row">
+    <div class="col-xxl-3 pt-4 account-options">
+        <div class="animate__animated animate__backInLeft">
+            <ul>
+                <li><a href="#" class="account-style">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Thông tin tài khoản</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>Thông báo của tôi</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <i class="fa-solid fa-table-list"></i>
+                        <span>Quản lý đơn hàng</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <i class="fa-solid fa-table-list"></i>
+                        <span>Quản lý đổi trả</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Số địa chỉ</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>Thông tin thanh toán</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <span>Nhận xét sản phẩm đã mua</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>Sản phẩm bạn đã xem</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <i class="fa-solid fa-heart-circle-check"></i>
+                        <span>Sản phẩm yêu thích</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                        <span>Sản phẩm mua sau</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <i class="fa-solid fa-cart-arrow-down"></i>
+                        <span>Nhận xét của tôi</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Thông tin ULibsDeli</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <img class="icon"
+                            src="https://frontend.tikicdn.com/_desktop-next/static/img/mycoupon/coupon_code.svg">
+                        <span>Mã giảm giá</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <img class="icon"
+                            srcset="https://salt.tikicdn.com/ts/upload/b5/33/14/09096979a40d25a2ad3976e3809ceb78.png 2x, https://salt.tikicdn.com/ts/upload/4a/d4/da/77fe4fd0c771088f7794ba3ce66782eb.png 1x">
+                        <span>Quản lí ULibs Coin</span>
+                    </a></li>
+                <li><a href="#" class="account-style">
+                        <img class="icon" src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/bookcare.svg"
+                            <span>BookCare center</span>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xxl-9">
+        <div class="animate__animated animate__backInUp">
+            <div class="row user-control ">
+                <div class="col-xxl-7 user-form">
+                    <p class="title">Thông tin cá nhân</p>
+                    <div>
+                        <form action="" name="user-infomation">
+                            <div class="form-info">
+                                <div class="form-avatar">
+                                    <div class="avatar">
+                                        <div class="avatar-view" style="width: 100%;height: 100%">
+                                            <img src="{{user.avatar_img}}"
+                                                alt="avatar" class="avatar-img" style="width: 100%;height: 100%" id="avatar-img">
+                                            <div class="edit">
+                                                <img src="https://frontend.tikicdn.com/_desktop-next/static/img/account/edit.png"
+                                                    class="edit_img" alt="">                              
+                                            </div>
+                                            <div class="file-chooser">
+                                                    <ul>
+                                                        <li class="upload-avatar-btn">
+                                                            <i class="fa-solid fa-upload"></i>
+                                                           <p>Tải ảnh đại diện lên</p>
+                                                           <input id="actual-upload" type="file" onchange="readURL(this)">  
+                                                        </li>
+                                                        <li>
+                                                            <i class="fa-solid fa-trash-can"></i>
+                                                            <p>Xóa ảnh hiện tại</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-name">
+                                    <div class="form-control-cus">
+                                        <label for="" class="label-input">Họ & tên</label>
+                                        <div>
+                                            <div class="text-input">
+                                                <input class="input " type="search" name="displayName" maxlength="128"
+                                                    placeholder="Thêm họ tên" value="{{user.displayName}}" id="displayName">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-control-cus">
+                                        <label for="" class="label-input">ID người dùng</label>
+                                        <div>
+                                            <div class="text-input">
+                                                <input class="input " name="id" maxlength="128"
+                                                    placeholder="Thêm nickname" type="search" value="{{user._id}}" id="id" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-control-cus">
+                                    <label for="datepicker" class="label-input">Ngày sinh</label>
+                                    <input type="text" id="datepicker" autocomplete="off" value="{{#if user.dob}}{{user.dob}}{{else}}01-01-2001{{/if}}">
+                            </div>
+                            <div class="form-control-cus">
+                                <label class="label-input" data="{{user.gender}}" id="gender-js">Giới tính</label>
+                                <label class="radio-styled">
+                                    <input type="radio" name="gender" id="gender" value="male">
+                                    <span class="radio-fake"></span>
+                                    <span class="label gender">Nam</span>
+                                </label>
+                                <label class="radio-styled">
+                                    <input type="radio" name="gender" id="gender" value="female">
+                                    <span class="radio-fake"></span>
+                                    <span class="label gender">Nữ</span>
+                                </label>
+                                <label class="radio-styled">
+                                    <input type="radio" name="gender" id="gender" value="other">
+                                    <span class="radio-fake"></span>
+                                    <span class="label gender">Không muốn tiết lộ</span>
+                                </label>
+                            </div>
+                            <div class="form-control-cus">
+                                <label class="label-input">Địa chỉ giao hàng</label>
+                                <div>
+                                    <div class="user-address">
+                                        <div class="text-input">
+                                                <input class="input " name="address" maxlength="128"
+                                                    placeholder="Bạn chưa cập nhật thông tin địa chỉ" type="search" value="{{user.address}}" id="address" disabled>
+                                        </div>
+                                        <div class="list-item">
+                                            <div class="status">
+                                                <button type="none" class="button active draw-border edit-address-btn update-event-js"> Cập nhật</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-input edit-address-form">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <select name="" id="province" class="form-select">
+                                                    <option  value="">Chọn Tỉnh</option>
+                                                </select>                                                
+                                            </div>
+                                            <div class="col-6">
+                                                <select name="" id="district" class="form-select">
+                                                    <option  value="">Chọn Quận / Thành phố</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <select name="" id="ward" class="form-select">
+                                                    <option   value="">Chọn Phường / Xã</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="text-input">
+                                            <input class="input " type="search" name="no-Address" maxlength="128"
+                                                placeholder="Nhập số nhà ... " value="" id="no-Address">
+                                        </div>
+                                        <div class="group-btn-edit-address">
+                                            <div class="cancel-btn edit-address-user">
+                                                <div class="status">
+                                                    <button type="button" class="btn btn-outline-danger edit-address-btn cancel-event-js">Hủy bỏ</button>
+                                                 </div>
+
+                                            </div>
+                                            <div class="submit-btn edit-address-user">
+                                                <div class="status">
+                                                    <button type="button" class="btn btn-outline-success edit-address-btn submit-change-event-js">Thay đổi</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                            <div class="form-control-cus">
+                                <label class="label-input"></label>
+                                <button type="none"class="btn-submit" >Lưu thay đổi</button>
+                                <span class="updating-status">
+                                </span>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-xxl-5 info-right">
+                    <div class="block">
+                        <p class="title">
+                            Số điện thoại và Email
+                        </p>
+                        <div class="d-flex w-100">
+                            <div class="cube">
+                                <div class="list-item">
+                                    <div class="info">
+                                        <img src="https://frontend.tikicdn.com/_desktop-next/static/img/account/phone.png"
+                                            alt="" class="icon">
+                                        <div class="detail">
+                                            <span>Số điện thoại</span>
+                                            <span>{{user.phoneNumber}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="status">
+                                        <button class="button active draw-border"> Cập nhật</button>
+                                    </div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="info">
+                                        <img src="https://frontend.tikicdn.com/_desktop-next/static/img/account/email.png"
+                                            alt="" class="icon">
+                                        <div class="detail">
+                                            <span>Email</span>
+                                            <span>{{user.email}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="status">
+                                        <button class="button active draw-border"> Cập nhật</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <p class="title">
+                            Bảo mật
+                        </p>
+                        <div class="cube">
+                            <div class="list-item">
+                                <div>
+                                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/account/lock.png"
+                                        class="icon" alt="">
+                                    <span>Thiết lập mật khẩu</span>
+                                </div>
+                                <div class="status"><span></span><button class="button active draw-border">Cập nhật</button></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="block">
+                        <p class="title">
+                            Liên kết mạng xã hội
+                        </p>
+                        <div class="cube">
+                            <div class="list-item">
+                                <div><img
+                                        src="https://frontend.tikicdn.com/_desktop-next/static/img/account/facebook.png"
+                                        class="icon"><span>Facebook</span></div>
+                                <div class="status"><span></span><button class="button active draw-border">Liên kết</button></div>
+                            </div>
+                            <div class="list-item">
+                                <div><img src="https://frontend.tikicdn.com/_desktop-next/static/img/account/google.png"
+                                        class="icon"><span>Google</span></div>
+                                <div class="status"><span></span><button class="button active draw-border">Liên kết</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="toast"></div>
+<script>
+
+</script>
+<script>
+    document.title = `Thông tin cá nhân - ULibs`
+    
+    var gender = $('#gender-js').attr('data');
+    if (gender!='Chưa cập nhật'){
+        $(`input[value=${gender}]`).prop('checked', true);
+    }
+    $('.btn-submit').click(() => update());
+
+    $('.edit-address-btn').click((e) => {     
+        $('form[name="user-infomation"]').submit((e) =>{
+            return false;
+        })
+    });
+
+    function getDistrict() {
+        if ($("#district").val() != "" && $("#province").val() != "" &&
+            $("#ward").val() != "" && $("#no-Address").val() != "") {
+            let result = $("#no-Address").val() +  ', ' + $("#ward option:selected").text() + ', ' +
+                $("#district option:selected").text()  + ', ' + $("#province option:selected").text()
+            return result;
+        }
+        return null;
+    }
+    function updateAddress() {
+        $('.update-event-js').click((e) => {
+            $('.user-address').css('display', 'none')
+            $('.edit-address-form').css('display', 'block')
+        })
+
+    }
+    function cancelEditUserInfo() {
+        $('.cancel-event-js').click(() =>{
+            $('.edit-address-form').css('display', 'none')
+            $('.user-address').css('display', 'flex') 
+        })
+    }
+    function submitUpdateAddress() {
+        $('.submit-change-event-js').click(() => {
+            $('input[name="address"]').val(`${getDistrict()}`)
+            $('.edit-address-form').css('display', 'none')
+            $('.user-address').css('display', 'flex') 
+        })
+    }
+
+    updateAddress()
+    submitUpdateAddress()
+    cancelEditUserInfo()
+
+</script>
+<script>
+    var avatar;
+    document.querySelector(".upload-avatar-btn").addEventListener("click", function() {
+        document.querySelector("#actual-upload").click();
+    });
+
+    function readURL(input) {
+        
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#avatar-img')
+                    .attr('src', e.target.result);
+
+            };
+            avatar = input.files[0]
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+</script>
+<script>
+
+    function toast({ title = "", message = "", type = "info", duration = 3000 }) {
+        const main = document.getElementById("toast");
+        if (main) {
+            const toast = document.createElement("div");
+
+            // Auto remove toast
+            const autoRemoveId = setTimeout(function () {
+                main.removeChild(toast);
+            }, duration + 1000);
+
+            // Remove toast when clicked
+            toast.onclick = function (e) {
+                if (e.target.closest(".toast__close")) {
+                    main.removeChild(toast);
+                    clearTimeout(autoRemoveId);
+                }
+            };
+
+            const icons = {
+                success: "fas fa-check-circle",
+                info: "fas fa-info-circle",
+                warning: "fas fa-exclamation-circle",
+                error: "fas fa-exclamation-circle"
+            };
+            const icon = icons[type];
+            const delay = (duration / 1000).toFixed(2);
+
+            toast.classList.add("toast", `toast--${type}`,"animate__animated","animate__fadeInRight");
+            // toast.style.animation = `slideInLeft ease .3s, fadeOut linear 1s ${delay}s forwards`; 
+            toast.innerHTML = `
+                                    <div class="toast__icon">
+                                        <i class="${icon}"></i>
+                                    </div>
+                                    <div class="toast__body">
+                                        <h3 class="toast__title">${title}</h3>
+                                        <p class="toast__msg">${message}</p>
+                                    </div>
+                                    <div class="toast__close">
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                `;
+            main.appendChild(toast);
+
+            setTimeout(function () {    
+                toast.classList.remove("animate__fadeInRight");
+                toast.classList.add("animate__bounceOutRight");
+            }, 5000);
+        }
+    }
+
+
+    function update() {
+
+       const uploadData = new FormData();
+
+        uploadData.append("displayName",  $('#displayName').val());
+        uploadData.append("dob",  $('#datepicker').val());
+        uploadData.append("gender", $('input[name="gender"]:checked').val());
+        uploadData.append("address",  $('input[name="address"]').val());
+        uploadData.append("id",  $('#id').val());
+        uploadData.append("avatar_img", avatar);
+
+        $('.updating-status').html('<img src="../../img/logo/loading-sm.gif" alt="" width="100%">');
+
+            $.ajax({  
+                url: '/me',
+                type: 'POST',
+                contentType: false, 
+                processData: false,
+                data: uploadData
+            })
+            .then(data => {
+                if (data.success) {
+
+                    $('.updating-status').html('<img src="../../img/logo/green-tick.gif" alt="" width="100%">');
+                    setTimeout(
+                        () => {
+                            $('.updating-status').html('');
+                        }, 2500
+                    )
+                    toast({
+                        title: "Thành công!",
+                        message: "Thông tin của bạn đã được chỉnh sửa thành công",
+                        type: "success",
+                        duration: 50000
+                    })
+                }
+            else {
+                $('.alert').css('display', 'block');
+            }
+        })
+            .catch(err => console.log(err));
+      }
+</script>

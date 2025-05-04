@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url(../img/logo/pastel-background-goo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /*Start login form style*/
+  .form-section{
+    width: calc(100% - 25%);
+    height: 85vh;
+    margin: calc(10vh - 25px) auto;
+    background: transparent;
+    box-shadow: 0 0 10px 10px rgb(0 0 0 / 25%);
+    border-radius: 2rem;
+  }
+
+  .login-form {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+
+  }
+
+  .row > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .login-form > .section{
+    width: 100%;
+    height: 100%;
+    padding: 48px;
+    padding-top: 16px;
+    padding-bottom: 0;
+  }
+  .section .logo-img {
+    width: 148px;
+    height: 148px;
+  }
+  .login-title{
+    width: 148px;
+    margin-right: 32px;
+  }
+  .login-title h5 {
+    font-size: 1.56rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 110% !important;
+    text-align: center;
+
+  }
+  .section-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* Text Filed style */
+  .material-textfield {
+    position: relative;
+    margin: 16px;
+    margin-top: 0;
+  }
+  
+  label {
+    position: absolute;
+    font-size: 1rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: gray;
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    transition: .1s ease-out;
+    transform-origin: left top;
+    pointer-events: none;
+  }
+  input {
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;  
+    padding: 0.9rem 0.7rem;
+    color: gray;
+    transition: 0.1s ease-out;
+  }
+  input:focus {
+    border-color: #6200EE;  
+  }
+  input:focus + label {
+    color: #6200EE;
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+  input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(.9);
+  }
+  .text-field-form input {
+    width: 100%;
+  }
+
+  /* Button Submit Style */
+  .submit-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+  .mobile-button__submit{
+    background-color: #fff;
+    background-size: 1.571150680831962rem;
+    width: 4.489001945234176rem;
+    border-radius: 1.5rem;
+    height: 4.489001945234176rem;
+    font-size: 1.246944984787271rem;
+    border: 1px solid #6200EE;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+  }
+  .mobile-button__submit > i {
+    color: #6200EE;
+    font-size: 28px;
+  }
+  .mobile-button__submit:hover {
+    background-color: #6200EE;
+  }
+  .mobile-button__submit:hover i{
+    color: #fff;
+  }
+  /************/
+
+  .forget-password {
+    text-align: center;
+  }
+
+  .forget-password a {
+    color: #1da1f2;
+    transition: 0.3s;
+    text-decoration: underline;
+  }
+
+  .forget-password a:hover {
+    color: #fff;
+  }
+
+  .forget-password a:active {
+    color: #fff;
+  }
+  i.fa{
+    margin-right: 8px;
+  }
+ .alert {
+  visibility: hidden;
+  font-size: 13px;
+  color: red;
+  padding: 4px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0 16px;
+ }
+ .rounded-social-buttons {
+  text-align: center;
+}
+.rounded-social-buttons .circle-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: 1s ease all;
+  margin-right: 0.25rem;
+}
+.rounded-social-buttons .circle-button:hover, .rounded-social-buttons .circle-button:focus {
+  transform: rotate(360deg);
+}
+.rounded-social-buttons .circle-button.facebook {
+  background: #3b5998;
+}
+.rounded-social-buttons .circle-button.facebook:before {
+  font-family: "FontAwesome";
+  content: "\f09a";
+}
+.rounded-social-buttons .circle-button.facebook:hover, .rounded-social-buttons .circle-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+.rounded-social-buttons .circle-button.tumblr:hover, .rounded-social-buttons .circle-button.tumblr:focus {
+  color: #32506d;
+  background: #fefefe;
+  border-color: #32506d;
+}
+/* Forget password */
+.forget-password-form{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* Login Slide */
+
+.login-banner {
+  height: 100%;
+}
+
+.login-slider-img {
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+  
+
+
+#slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+#slideshow > div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+/* Social Login Button Style */
+
+.social-media {
+  margin-top: 35px;
+}
+
+
+.social-media button > a {
+  color: #fff;
+  text-decoration: none;
+}
+span.description{
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 11px;
+  color: #fff;
+  margin-left: 16px;
+  display: none;
+}
+.rounded-social-buttons .circle-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: 1s ease all;
+  margin-right: 0.25rem;
+}
+.rounded-social-buttons .circle-button:hover, .rounded-social-buttons .circle-button:focus {
+  transform: rotate(360deg);
+}
+.rounded-social-buttons .circle-button.facebook {
+  background: #3b5998;
+}
+.rounded-social-buttons .circle-button.facebook:before {
+  font-family: "FontAwesome";
+  content: "\f09a";
+}
+.rounded-social-buttons .circle-button.facebook:hover, .rounded-social-buttons .circle-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+.rounded-social-buttons .circle-button.tumblr:hover, .rounded-social-buttons .circle-button.tumblr:focus {
+  color: #32506d;
+  background: #fefefe;
+  border-color: #32506d;
+}
+/* Login Option Style */
+
+.login-option{
+    display: flex;
+    justify-content: space-between;
+}
+.option a{
+  text-decoration: none;
+  color: #666;
+  text-transform: uppercase;
+  font-size: 0.638435832211083rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 110%;
+}
+.to-register:hover > a,
+.to-forgot-password:hover > a
+{
+  font-style: italic;
+  color: #000;
+  text-transform: uppercase;
+}

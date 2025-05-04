@@ -1,0 +1,48 @@
+{
+  "name": "ulibs",
+  "version": "1.0.0",
+  "description": "Trang web mua bán sách trực tuyến ",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Shopify",
+    "Book",
+    "Shop"
+  ],
+  "author": "Nguyen Trung Hieu",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cloudinary": "^1.32.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.5",
+    "express-session": "^1.17.3",
+    "express-sslify": "^1.2.0",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "jquery-lazy": "^1.7.11",
+    "jsonwebtoken": "^8.5.1",
+    "memorystore": "^1.6.7",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.3.3",
+    "mongoose-slug-generator": "^1.0.4",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
+    "node-localstorage": "^2.2.1",
+    "nodemailer": "^6.7.8",
+    "nodemon": "^2.0.20",
+    "otp-generator": "^4.0.0",
+    "passport": "^0.6.0",
+    "passport-facebook": "^3.0.0",
+    "random-number": "^0.0.9"
+  }
+}

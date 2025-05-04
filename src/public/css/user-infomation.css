@@ -1,0 +1,476 @@
+.account-options{
+    /* margin: 0px 0px 12px; */
+    background-color: #f5f5fa;
+}
+.account-options ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 13px;
+}
+.account-options li {
+    width: 100%;
+
+}
+.account-options li a {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 7px 18px;
+    color: rgb(74, 74, 74);
+}
+
+.account-options li a:hover {
+    background-color: rgb(235, 235, 240);
+    color: rgb(0, 0, 0);
+}
+.account-options li i {
+    width: 24px;
+    height: 24px;
+    margin: 0px 22px 0px 0px;
+    font-size: 20px;
+    color: rgb(155, 155, 155);
+    text-align: center;
+}
+.user-form {
+    padding: 16px 24px 16px 16px;
+    height: auto;
+}
+.user-control{
+    /* background-color: #f5f5fa; */
+}
+.user-form > .title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgb(100, 100, 109);
+}
+.user-form > div {
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin-top: 16px;
+}
+.user-form > form {
+    width: 100%;
+}
+.form-info {
+    display: flex;
+    flex-direction: row;
+}
+.form-info .form-avatar {
+    margin-right: 16px;
+}
+.form-avatar > .avatar {
+    background-color: rgb(240, 248, 255);
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    border: 4px solid rgb(194, 225, 255);
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.form-avatar .avatar-view {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.avatar-view .avatar-img {
+    border-radius: 50%;
+}
+.avatar-view .edit {
+    
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(100, 100, 109);
+    border-radius: 12px;
+    right: 3px;
+    bottom: 5px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+}
+.edit_img{
+    height: 10px;
+    width: 10px;
+}
+.form-info > .form-name {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.form-control-cus {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px 0px 34px;
+}
+.form-control-cus > .label-input {
+    width: 110px;
+    min-width: 110px;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    margin-right: 16px;
+}
+.form-control-cus > div {
+    display: flex;
+    flex: 1 1 0%;
+    position: relative;
+    z-index: 1;
+}
+.text-input{
+    width: 100%;
+}
+.text-input > input {
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
+    height: 36px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px 12px;
+    line-height: 20px;
+    outline: none;
+    flex: 1 1 0%;
+    border: 1px solid rgb(196, 196, 207);
+}
+.text-input select {
+    margin: 4px;
+}
+.form-control-cus > div > select {
+    width: 100px;
+    border: 1px solid rgb(204, 204, 204);
+    height: 34px;
+    padding: 6px 12px;
+    line-height: 34px;
+    outline: none;
+    border-radius: 4px;
+    margin: 0px 12px 0px 0px;
+    background: 0px center;
+    box-shadow: none;
+}
+.radio-styled{
+    display: flex;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.radio-styled > input[type="radio"] {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+    clip: rect(0px, 0px, 0px, 0px);
+    opacity: 0;
+}
+.radio-fake {
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgb(147, 150, 157);
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 10px 0px 0px;
+    position: relative;
+    z-index: 1;
+    color: rgb(120, 120, 120);
+    flex-shrink: 0;
+}
+.radio-styled > input[type="radio"]:checked + .radio-fake {
+    border-color: rgb(13, 92, 182);
+}
+.radio-styled > input[type="radio"]:checked + .radio-fake::before {
+    transform: scale(1);
+}
+.radio-fake::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(13, 92, 182);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s ease 0s;
+}
+.label {
+    font-size: 13px;
+    line-height: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+input.with-icon-right{
+    padding-right: 35px;
+}
+.btn-submit{
+    width: 176px;
+    border: 0px;
+    height: 40px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    background-color: rgb(11, 116, 229);
+    cursor: pointer;
+    margin-left: 5rem;
+}
+.cube{
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+.list-item{
+    border-top: 1px solid rgb(248, 248, 248);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 19px 0px;
+}
+.list-item:first-child {
+    border: none;
+}
+.info{
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+.list-item span {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px 0px 0px 6px;
+    color: rgb(56, 56, 61);
+}
+.list-item .status {
+    color: rgb(27, 168, 255);
+    margin-right: 20px;
+    flex: 1 1 0%;
+    -webkit-box-pack: justify;
+    justify-content: flex-end;
+    display: flex;
+}
+.list-item button {
+    font-size: 14px;
+    cursor: pointer;
+    padding: 8px 12px;
+
+}
+.list-item button.active {
+    background-color: rgb(255, 255, 255);
+}
+.info-right > .block{
+    padding: 0px 8px 0px 8px;
+}
+.file-chooser{
+    display: none;
+    position: absolute;
+    top: 105px;
+    left: 80px;
+    width: 250px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 0px 4px;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+.file-chooser > ul {
+    display: block;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.file-chooser li {
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    align-items: center;
+}
+.file-chooser li p{
+    margin-left: 16px;
+    margin-bottom: 0;
+}
+.file-chooser i {
+    color: rgb(108, 108, 108);
+}
+.file-chooser > ul :hover{
+    background-color: rgb(240, 248, 255);
+}
+/* Upload avatar style */
+.upload-avatar-btn:active {
+    background-color: rgb(240, 248, 255);
+}
+
+#actual-upload {    
+    display: none;
+}
+/* Date picker */
+
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #546E7A;
+}
+
+label[for="datepicker"] {
+	font-size: 0.75rem;
+	font-weight: 400;
+	display: block;
+	
+}
+input#datepicker {
+	font-family: 'Roboto', sans-serif;
+	display:block;
+	line-height: 1.5rem;
+	padding: 0;
+	font-size: 1rem;
+    color: #000;
+	width: 100%;
+	margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+	border: 1px solid #ECEFF1;
+	padding: 0.5rem 0.75rem;
+	border-radius: 0.5rem;
+}
+input#datepicker:focus {outline: none;}
+#ui-datepicker-div {
+	display: none;
+	background-color: #fff;
+	box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.1);
+	margin-top: 0.25rem;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.ui-datepicker-calendar thead th {
+	padding: 0.25rem 0;
+	text-align: center;
+	font-size: 0.75rem;
+	font-weight: 400;
+	color: #78909C;
+}
+.ui-datepicker-calendar tbody td {
+	width: 2.5rem;
+	text-align: center;
+	padding: 0;
+}
+.ui-datepicker-calendar tbody td a {
+	display: block;
+	border-radius: 0.25rem;
+	line-height: 2rem;
+	transition: 0.3s all;
+	color: #546E7A;
+	font-size: 0.875rem;
+	text-decoration: none;
+}
+.ui-datepicker-calendar tbody td a:hover {	
+	background-color: #E0F2F1;
+}
+.ui-datepicker-calendar tbody td a.ui-state-active {
+	background-color: #009688;
+	color: white;
+}
+.ui-datepicker-header a.ui-corner-all {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	width: 2rem;
+	height: 2rem;
+	margin: 0.5rem;
+	border-radius: 0.25rem;
+	transition: 0.3s all;
+}
+.ui-datepicker-header a.ui-corner-all:hover {
+	background-color: #ECEFF1;
+}
+.ui-datepicker-header a.ui-datepicker-prev {	
+	left: 0;	
+	background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==");
+	background-repeat: no-repeat;
+	background-size: 0.5rem;
+	background-position: 50%;
+	transform: rotate(180deg);
+}
+.ui-datepicker-header a.ui-datepicker-next {
+	right: 0;
+	background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj48cGF0aCBmaWxsPSIjNDI0NzcwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03LjI4OCA2LjI5NkwzLjIwMiAyLjIxYS43MS43MSAwIDAgMSAuMDA3LS45OTljLjI4LS4yOC43MjUtLjI4Ljk5OS0uMDA3TDguODAzIDUuOGEuNjk1LjY5NSAwIDAgMSAuMjAyLjQ5Ni42OTUuNjk1IDAgMCAxLS4yMDIuNDk3bC00LjU5NSA0LjU5NWEuNzA0LjcwNCAwIDAgMS0xLS4wMDcuNzEuNzEgMCAwIDEtLjAwNi0uOTk5bDQuMDg2LTQuMDg2eiIvPjwvc3ZnPg==');
+	background-repeat: no-repeat;
+	background-size: 10px;
+	background-position: 50%;
+}
+.ui-datepicker-header a>span {
+	display: none;
+}
+.ui-datepicker-title {
+	text-align: center;
+	line-height: 2rem;
+	margin-bottom: 0.25rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+	padding-bottom: 0.25rem;
+}
+.ui-datepicker-week-col {
+	color: #78909C;
+	font-weight: 400;
+	font-size: 0.75rem;
+}
+.ui-datepicker-week-end > tbody > tr > td > a.ui-state-default{
+    background-color: #dddddd;
+}
+/* Edit Address Form Styles */
+.edit-address-form {
+    display: none;
+}
+.user-address {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.user-address button {
+    /* margin-left: 16px; */
+}
+#no-Address{
+    margin: 4px;
+}
+.user-address > .text-input {
+    flex-basis: 200%;
+}
+.group-btn-edit-address{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+}
+.group-btn-edit-address .status {
+    height: 50px;
+    width: 100px;
+}
+.group-btn-edit-address .status .btn {
+    padding: 6px 12px;
+}
+/* Updating Status */
+.updating-status{
+    width: 40px;
+    height: 40px;
+}
