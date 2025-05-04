@@ -104,11 +104,15 @@ passport.use(new FacebookStrategy({
 //Route init
 route(app);
 app.use(enforce.HTTPS({ trustProtoHeader: true }))
-https.createServer(options,app).listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-})
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}`);
-// })
 
-
+if (process.env.NODE_ENV === 'production' || process.env.HEROKU) {
+  // On Heroku: use HTTP server
+  app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`);
+  });
+} else {
+  // Local dev: use HTTPS server
+  https.createServer(options, app).listen(port, () => {
+    console.log(`Example app listening on port ${port}`);
+  });
+}
