@@ -1,5 +1,5 @@
 const users = require('../models/User');
-const { mutipleMongooseToObject } = require('../../util/mongoose');
+const { toObject } = require('../../util/mysql');
 const { param } = require("express/lib/request");
 const path = require('path');
 const jwt = require('jsonwebtoken');
@@ -17,56 +17,60 @@ class LoginController {
         }
         res.sendFile(path.join(__dirname, '../../views/login.html'));
     }
-    authenticate(req, res, next) {
+    
+    async authenticate(req, res, next) {
+        try {
+            const username = req.body.username;
+            const password = req.body.password;
+            const email = req.body.email;
 
-        var username = req.body.username
-        var password = req.body.password
-        var email = req.body.email
+            // Tìm kiếm người dùng theo username hoặc email
+            let data;
+            if (username) {
+                data = await users.findByUsername(username);
+            } else if (email) {
+                data = await users.findByEmail(email);
+            }
 
-            users.findOne({ 
-                username: username, 
-                email: email,
-            })
-                .then(data => {
-                    console.log(data);
-                    if(data){
-                        bcrypt.compare(password, data.password).then(function(result) {
-                            if (result){
-                                var token =  jwt.sign({
-                                        _id : data._id,
-                                    }, 'mk')
-                                return res.json({
-                                    success : true,
-                                    token : token,
-                                })
-                            }
-                            else return res.json({
-                                success : false,
-                            })
-                        });      
-                    }
-                    else return res.json('that bai')
-                })
-                .catch(err => {
-                    res.status(500).json({ error: 'loi server'})
-                })
-
+            if (data) {
+                // So sánh password
+                const result = await bcrypt.compare(password, data.password);
+                if (result) {
+                    const token = jwt.sign({
+                        _id: data.id, // Sử dụng id thay cho _id trong MySQL
+                    }, 'mk');
+                    return res.json({
+                        success: true,
+                        token: token,
+                    });
+                } else {
+                    return res.json({
+                        success: false,
+                    });
+                }
+            } else {
+                return res.json('that bai');
+            }
+        } catch (err) {
+            console.error(err);
+            res.status(500).json({ error: 'loi server' });
         }
+    }
+    
     checkAuth(req, res, next) {
         try {
             var token = req.cookies.token;
-            var result = jwt.verify(token, 'mk')
+            var result = jwt.verify(token, 'mk');
             if(result) {
-                next()
+                next();
             }
         } catch (error) {
-            return res.redirect('/login')
+            return res.redirect('/login');
         }
-
-
     }
+    
     accepted(req, res, next) {
-        res.json('Welcome')
+        res.json('Welcome');
     }
 }
 

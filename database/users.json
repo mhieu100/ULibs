@@ -1,0 +1,741 @@
+[{
+  "_id": {
+    "$oid": "6464f78ccbeeb5c90a7667c4"
+  },
+  "username": "admin",
+  "password": "$2b$10$SvnSMl0K1Q176PBmemQExO1ScQkwcFzD8yZbohzAQk5E8PwTg/yKe",
+  "email": "admin@gmail.com",
+  "displayName": "Nguyễn Trung Hiếu",
+  "address": "So 2 Ngo 30 Duong Ho Bang, Phường Quang Trung, Thành phố Vinh, Tỉnh Nghệ An",
+  "dob": "24-03-2003",
+  "gender": "male",
+  "avatar_img": "https://res.cloudinary.com/dnylevkch/image/upload/v1746439890/ulibs/l7561odd22ei5smi5exy.png",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684338572470"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1746439891196"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63062a4eada268b708cf4191"
+  },
+  "username": "1392490034611692",
+  "displayName": "Công Giang",
+  "email": "giangle74203@gmail.com",
+  "avatar_img": "https://scontent-ord5-1.xx.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c15.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-7&_nc_sid=12b3be&_nc_ohc=YgDUdX28jo0AX9Ny8om&_nc_ht=scontent-ord5-1.xx&edm=AP4hL3IEAAAA&oh=00_AT8s_n0wr1fnBZowMGdTUmZ57A9gbVP3K6Wtmun_pe2GNw&oe=632B4719",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661348430241"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661787536395"
+    }
+  },
+  "__v": 0,
+  "role": "member",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "address": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "dob": "Chưa cập nhật"
+},{
+  "_id": {
+    "$oid": "6466b8cebae04d23e4310816"
+  },
+  "username": "admin1234",
+  "password": "$2b$10$0sftsGt/Ne8Xorqr.pzQEe5f0K7KieISjeSHFOaHQGs.UhOQvD32.",
+  "email": "admin1234@gmail.com",
+  "displayName": "Nguyen Trung H",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684453582416"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1684453582416"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "648b47dad8fa9bc182cc94fc"
+  },
+  "username": "phongg",
+  "password": "$2b$10$BaakS7OeIMlkU1oOfd90uuJZKLmKcMRbSAqSOkAjEg4lb0.0yKeza",
+  "email": "ncv2003@yahoo.com.vn",
+  "displayName": "tfr",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1686849498429"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1686849498429"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6492f4cc5fb32c24ef9680ab"
+  },
+  "username": "Phongnguu",
+  "password": "$2b$10$C8RjJZ15KiHJK2VDFxqQMOGlkgm8/5qg1HisGaytlXKBQF5STCDTW",
+  "email": "nguyenquynhtrang@yahoo.com",
+  "displayName": "Nguyễn Đức Phong",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "undefined",
+  "avatar_img": "https://res.cloudinary.com/dnylevkch/image/upload/v1687352624/ulibs/jnvbf2iexqtwvry5axfi.jpg",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1687352524418"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1687352626348"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "649a3e9b7f6b4495be052f2d"
+  },
+  "username": "thanhthinh",
+  "password": "$2b$10$DMmKfcpFbqFYEPF1JuLRkOgVh4oY128cnGmevORrPxWdk9HVWqWyG",
+  "email": "tranthanhthinh1401@gmail.com",
+  "displayName": "thanthinh",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1687830171108"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1687830171108"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64b6a3e31116af8430ef8bba"
+  },
+  "username": "noazuynh",
+  "password": "$2b$10$ezW.NYH/AzFMpko8.KGW4.hKn7fvWQXhKiSApMUmwmOiyVCcfVvdG",
+  "email": "contact@saptetroi.tk",
+  "displayName": "noazuynh",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1689691107354"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1689691107354"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65935be69dfa035fabc3cfd7"
+  },
+  "username": "phiphong12",
+  "password": "$2b$10$bxkvhft75jlzOR6b6QK7we8h64VEXgW06Gp/7TWrqu6wbqZLkExuS",
+  "email": "phiphong@gmail.com",
+  "displayName": "Nguyen Phi Phong",
+  "address": "120, Xã Cẩm Mỹ, Huyện Cẩm Xuyên, Tỉnh Hà Tĩnh",
+  "dob": "Chưa cập nhật",
+  "gender": "other",
+  "avatar_img": "https://res.cloudinary.com/dnylevkch/image/upload/v1704156224/ulibs/ikppnjjfhct20tdyeeb7.jpg",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1704156134306"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1704156225707"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "631ac7e201ae453f22e9eefb"
+  },
+  "username": "1300789930662443",
+  "displayName": "Đức Côngg",
+  "email": "congduc3107@gmail.com",
+  "avatar_img": "https://scontent-lga3-2.xx.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c15.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-7&_nc_sid=12b3be&_nc_ohc=pNq8CtxIQf0AX-be75c&_nc_oc=AQlOVTizcKeIsvnpm4nZuNDrVoyfOFR3kCvdPOn9joGqNsQlbFW75DTfU6wAdbemiM4&_nc_ht=scontent-lga3-2.xx&edm=AP4hL3IEAAAA&oh=00_AT8BMPGAD6cg47bmfeHov3KEpB7P_yXCv4Dj2Q8nddTQjw&oe=633F0D99",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1662699490425"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1662734937808"
+    }
+  },
+  "__v": 0,
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "address": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "dob": "Chưa cập nhật"
+},{
+  "_id": {
+    "$oid": "636bf74e3bf00521ab2c61ab"
+  },
+  "username": "mavu88",
+  "password": "$2b$10$Cnx4DjeXzc/qJTWOCduWFuuuB21a.yXbm2qXhR8VBLmM81Iw0gOh2",
+  "email": "hieunt243@gmail.com",
+  "displayName": "Nguyễn Trung",
+  "avatar_img": "https://res.cloudinary.com/dnylevkch/image/upload/v1671755834/ulibs/avpoublm1hcfeejqnxwc.jpg",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668020047012"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671755837565"
+    }
+  },
+  "__v": 0,
+  "address": "Nhà 2, ngõ 30, đường Hồng Bàng, Phường Lê Mao, Thành phố Vinh, Tỉnh Nghệ An",
+  "dob": "24-03-2003",
+  "gender": "male"
+},{
+  "_id": {
+    "$oid": "630270d5ba1bbda80b0de2df"
+  },
+  "username": "762398571534588",
+  "displayName": "Trần Tuấn Anh",
+  "email": "ez4ence15@gmail.com",
+  "avatar_img": "https://scontent-iad3-2.xx.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c15.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-7&_nc_sid=12b3be&_nc_ohc=YgDUdX28jo0AX-rJWKH&_nc_ht=scontent-iad3-2.xx&edm=AP4hL3IEAAAA&oh=00_AT-KGEdh3n7CqsIIGEW59Nc5FFCeMCfL43D72Pee2d3JFw&oe=63275299",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661104341339"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661787536395"
+    }
+  },
+  "__v": 0,
+  "role": "member",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "address": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "dob": "Chưa cập nhật"
+},{
+  "_id": {
+    "$oid": "64873244932bab91683f84fd"
+  },
+  "username": "PhongNgu123",
+  "password": "$2b$10$xkfO8qRLdEIHlsjh/w9GYObb09O/d3oYlILyb4bg60qxRzTmPM7b2",
+  "email": "phong@gmail.com",
+  "displayName": "Phong",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1686581828422"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1686581828422"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "648735ef01abebbf93f78214"
+  },
+  "username": "PhongPhi123",
+  "password": "$2b$10$CSn5nz/IvG.LdCa23UJ1HedOKXgeEB4mCp3fIg4FpRzFGjG2pKSne",
+  "email": "phong123@gmail.com",
+  "displayName": "Phong",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1686582767298"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1686582767298"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62f5143eb5f10bc8a125e039"
+  },
+  "username": "phong.nguyen",
+  "password": "$2b$10$Pe6mRKpRtsI3VfKyqlsnoOqZ6tcuRuGxgTDtBpH2eCgTn4sremVwe",
+  "email": "ntphong.20it12@vku.udn.vn",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1660228670349"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661787536395"
+    }
+  },
+  "__v": 0,
+  "avatar_img": "https://i.pinimg.com/564x/fa/e7/6b/fae76b4580874fbbe7d7a9931e63ceae.jpg",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "displayName": "Phong Ngu",
+  "address": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "dob": "Chưa cập nhật"
+},{
+  "_id": {
+    "$oid": "634fbbe995689710980b0a4e"
+  },
+  "username": "kienngu123",
+  "password": "$2b$10$2kxcyNLhJwmVpeIXbn9WUeSeg1KfeGVnWONiTBIFDIsvy0AmufvT.",
+  "email": "kientx.21it@vku.udn.vn",
+  "displayName": "lol0000",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1666169833535"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1666170088818"
+    }
+  },
+  "__v": 0,
+  "address": "Chưa cập nhật",
+  "dob": "22-01-2003",
+  "gender": "female"
+},{
+  "_id": {
+    "$oid": "63a4852390dff5ca052f8b52"
+  },
+  "username": "3157482537797627",
+  "displayName": "Nguyễn Trung Hiếu",
+  "email": "hieuga1900@gmail.com",
+  "avatar_img": "https://scontent.fhan15-1.fna.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c15.0.50.50a_cp0_dst-jpg_p50x50&_nc_cat=1&ccb=1-7&_nc_sid=12b3be&_nc_ohc=OVzFrQruiTsAX9LDyzK&_nc_ht=scontent.fhan15-1.fna&edm=AP4hL3IEAAAA&oh=00_AfC2hicOIAMTiD7BhQYQZw09J6RV0CIWHK23pvc766mo9A&oe=63F3AB19",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671726371457"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1674325462933"
+    }
+  },
+  "__v": 0,
+  "gender": "male",
+  "dob": "06-12-2022",
+  "address": "Nhà 1, Xã Trung Nghĩa, Huyện Yên Phong, Tỉnh Bắc Ninh",
+  "role": "member",
+  "phoneNumber": "0818822203"
+},{
+  "_id": {
+    "$oid": "637641a53ff6b03534fd9833"
+  },
+  "username": "967317430891583",
+  "displayName": "Huy Cường",
+  "email": "cg75751375@gmail.com",
+  "avatar_img": "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=967317430891583&height=50&width=50&ext=1671286435&hash=AeRvTJNGwWun_OfWhlM",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1668694437312"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1668694437312"
+    }
+  },
+  "__v": 0,
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "gender": "Chưa cập nhật",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật"
+},{
+  "_id": {
+    "$oid": "64872d1f71147fa2cda31186"
+  },
+  "username": "PhiPhong",
+  "password": "$2b$10$GUdISjBNizddyFSw8yts4./.XuM9eNUJyVRzdsxZNT2QnMkSBvY8S",
+  "email": "phongnp.22it@vku.udn.vn",
+  "displayName": "Anya",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1686580511184"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1704155947711"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "649305a8750268a5264af934"
+  },
+  "username": "chivy",
+  "password": "$2b$10$S6cDxslmfftB1gzxOHXDVuqPIhRcQkTD.z6lPDbPEcBC3y.sNPIv.",
+  "email": "ncv@yahoo.com.vn",
+  "displayName": "vỷ đẹp trai ",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "undefined",
+  "avatar_img": "https://res.cloudinary.com/dnylevkch/image/upload/v1687356956/ulibs/ha3gacxrtgns3n1n9bu5.jpg",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1687356840297"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1687356959275"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6592bb0bcfe45693f54a9c98"
+  },
+  "username": "hieu2k3lm",
+  "password": "$2b$10$fhKBMUOAAlvfUZcAaKHze.VBNESqEwA5EoVqJPld.4mJGjhEFr5IC",
+  "email": "hieu",
+  "displayName": "Nguyen Trung Hieu",
+  "address": "Nhà 2, Xã Yên Mông, Thành phố Hòa Bình, Tỉnh Hoà Bình",
+  "dob": "24-01-2003",
+  "gender": "male",
+  "avatar_img": "https://res.cloudinary.com/dnylevkch/image/upload/v1704115371/ulibs/r1vp21xcwi0jffqatli1.jpg",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1704114955302"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1704115372377"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6596e20ae100832e57e4c222"
+  },
+  "username": "phiphong1234",
+  "password": "$2b$10$54b3EQoANECj3Z1er12zvOYvPt4kIpOA3MkHxcPFtwZsShsaTc2fy",
+  "email": "phongjokadz@gmail.com",
+  "displayName": "Phong Nguyen",
+  "address": "xom 2, Phường Đồng Xuân, Thành phố Phúc Yên, Tỉnh Vĩnh Phúc",
+  "dob": "15-01-2003",
+  "gender": "male",
+  "avatar_img": "https://res.cloudinary.com/dnylevkch/image/upload/v1704509590/ulibs/dwebvmnespsd0zefczvw.jpg",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1704387082134"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1704509590434"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63013129bce397f7039cd003"
+  },
+  "username": "1074245700128613",
+  "displayName": "Mỹ Hoa",
+  "email": "anlestia27@gmail.com",
+  "avatar_img": "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=1074245700128613&height=50&width=50&ext=1663616618&hash=AeT4y-txnQf6_pGk6w4",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1661022505305"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1661787536395"
+    }
+  },
+  "__v": 0,
+  "role": "member",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "address": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "dob": "Chưa cập nhật"
+},{
+  "_id": {
+    "$oid": "6466b54366e6fd29031b3f7d"
+  },
+  "username": "hieu2k3lmao",
+  "password": "$2b$10$0x/CZUlIGoXLXPwoW4EEtOwM2bwoW7SndKmK99cZShA9Z.y02jWrS",
+  "email": "willgotofactory@gmail.com",
+  "displayName": "Nguyen Trung Hieu",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1684452675365"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1684452675365"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62ed5dd2b9f2406c2e1eadc4"
+  },
+  "username": "401001628797397",
+  "displayName": "Nguyen Trung Hieu",
+  "email": "loltocchien458@gmail.com",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1659723218736"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1666169634191"
+    }
+  },
+  "__v": 0,
+  "avatar_img": "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=401001628797397&height=50&width=50&ext=1668761634&hash=AeRomroKntSguuNgUwI",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "address": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "dob": "Chưa cập nhật"
+},{
+  "_id": {
+    "$oid": "636253333723754fc1dd29ef"
+  },
+  "username": "abcxyz",
+  "password": "$2b$10$xqD1lqdYHBmnvY9cN11a6.C7pCN6.FmP.WtfXPfW7BQWPCuRHnRIO",
+  "email": "qgj92952@cdfaq.com",
+  "displayName": "Thang",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667388211507"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1667388211507"
+    }
+  },
+  "__v": 0,
+  "gender": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "address": "Chưa cập nhật"
+},{
+  "_id": {
+    "$oid": "6487d5056a7bcf9bc4f7e773"
+  },
+  "username": "thinhtran",
+  "password": "$2b$10$BcjzS4ZhmR43evgGfzvcLeX9sj7cZakuLy2TlajAl00dXxIgX22QK",
+  "email": "nguyenquynhtrang50@yahoo.com",
+  "displayName": "thinhhh",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1686623494069"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1686623494069"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673d76d3d5b4f1b441531f58"
+  },
+  "username": "test123",
+  "password": "$2b$10$eJTD33KxQuwcwmIQhxaHeuuFVUnK2uNqngB9hek1TeyI3B55qUfdi",
+  "email": "umbala@gmail.com",
+  "displayName": "Người mới",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1732081364016"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1732081364016"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "673eeac606e8860fd6b4785c"
+  },
+  "username": "giang",
+  "password": "$2b$10$cE6oahikxSyDwnUHl3Tcnu5wlokoG0PWqU9vgjdTzebe6B8St1j.S",
+  "email": "giang@gmail.com",
+  "displayName": "giang",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1732176582979"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1732176582979"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6742e2477c3e0eecc8b7a319"
+  },
+  "username": "tuan1",
+  "password": "$2b$10$3I/dLMx6uX.TprcNAGG5WeNc6fqmMUolGrj7j/HzemlWnHvMvZDhe",
+  "email": "tuananh09861@gmail.com",
+  "displayName": "tuan1",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1732436551260"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1732436551260"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "68179e400530a4f252209322"
+  },
+  "username": "mhieu",
+  "password": "$2b$10$RalERAEGCmDAAFX5QKCAzOYox8c7VMSRkmeLzW7R3KnNUxkPwrJzC",
+  "email": "hieunguyen201103@gmail.com",
+  "displayName": "mhieu",
+  "address": "Chưa cập nhật",
+  "dob": "Chưa cập nhật",
+  "gender": "Chưa cập nhật",
+  "avatar_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp=CAU",
+  "phoneNumber": "Bạn chưa liên kết số điện thoại",
+  "role": "member",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1746378305027"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1746378305027"
+    }
+  },
+  "__v": 0
+}]

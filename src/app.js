@@ -5,8 +5,10 @@ const morgan = require('morgan');
 const handlebars = require('express-handlebars');
 const path = require('path');
 const route = require('./routes');
-const mongoose = require('mongoose');
-const db = require ('./config/db/mongodb')
+// Thay thế mongoose bằng mysql
+// const mongoose = require('mongoose');
+// const db = require ('./config/db/mongodb')
+const db = require('./config/db/mysql');
 const methodOverride = require('method-override')
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');

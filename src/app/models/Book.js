@@ -1,19 +1,37 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema
-const slug = require('mongoose-slug-generator');
-mongoose.plugin(slug)
-const Book = new Schema ({
-    bookName : {type : String, maxlength : 255, required : true},
-    description : {type : String},
-    price : {type: String},
-    image : {type : String},
-    slug: { type: String, slug: 'bookName', unique : true },
-    authorName : {type : String},
-    raiing: {type: Number},
-    catelogy: {type : String},
-    deletedAt : {type : Date}
-},{
-    timestamps : true,
-})
+const { pool } = require('../../config/db/mysql');
 
-module.exports = mongoose.model('Book', Book)
+// Book model functions for MySQL
+const Book = {
+  async findOneBySlug(slug) {
+    const [rows] = await pool.query('SELECT * FROM books WHERE slug = ? LIMIT 1', [slug]);
+    return rows[0];
+  },
+  async findAll() {
+    const [rows] = await pool.query('SELECT * FROM books');
+    return rows;
+  },
+  async findOneByName(bookName) {
+    const [rows] = await pool.query('SELECT * FROM books WHERE bookName = ? LIMIT 1', [bookName]);
+    return rows[0];
+  },
+  async findByCatelogy(catelogy) {
+    const [rows] = await pool.query('SELECT * FROM books WHERE catelogy = ?', [catelogy]);
+    return rows;
+  },
+  async create(data) {
+    const [result] = await pool.query('INSERT INTO books SET ?', [data]);
+    return result.insertId;
+  },
+  async findById(id) {
+    const [rows] = await pool.query('SELECT * FROM books WHERE id = ? LIMIT 1', [id]);
+    return rows[0];
+  },
+  async updateById(id, data) {
+    await pool.query('UPDATE books SET ? WHERE id = ?', [data, id]);
+  },
+  async deleteById(id) {
+    await pool.query('DELETE FROM books WHERE id = ?', [id]);
+  }
+};
+
+module.exports = Book;

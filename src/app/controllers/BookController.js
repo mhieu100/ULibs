@@ -1,82 +1,98 @@
-const mongoose = require('mongoose');
 const books = require("../models/Book");
-const { mongooseToObject } = require('../../util/mongoose');
 const { param } = require("express/lib/request");
-const slug = require('mongoose-slug-generator');
-mongoose.plugin(slug)
+
 class BookController {
   
     // [GET] /search
-    show(req, res, next) {
-        books.findOne({
-            slug : req.params.slug
-        })
-        .then(book => {
+    async show(req, res, next) {
+        try {
+            const book = await books.findOneBySlug(req.params.slug);
             res.render('books/show', {
-                book : mongooseToObject(book)
-            })
-        })
-        .catch(next)
-    }
-    // [GET] /admin/products
-    showAll(req, res, next) {
-        books.find()
-        .then(books =>  {
-            return res.json({
-                "success" : true,
-                "books" : books,
+                book: book
             });
-        })
+        } catch (error) {
+            next(error);
+        }
     }
+    
+    // [GET] /admin/products
+    async showAll(req, res, next) {
+        try {
+            const booksList = await books.findAll();
+            return res.json({
+                "success": true,
+                "books": booksList,
+            });
+        } catch (error) {
+            next(error);
+        }
+    }
+    
     // [GET] /books/search
-    search(req, res, next) {
-        books.findOne({
-            bookName : req.query.tag
-        })
-        .then(book => {
+    async search(req, res, next) {
+        try {
+            const book = await books.findOneByName(req.query.tag);
             res.render('books/show', {
-                book : mongooseToObject(book)
-            })
-        })
-        .catch(next)
+                book: book
+            });
+        } catch (error) {
+            next(error);
+        }
     }
+    
     // [GET] /books/create
-    create(req, res, next){
-        res.render('books/create')
+    create(req, res, next) {
+        res.render('books/create');
     }
 
-     // [POST] /books/create
-     store(req, res, next){
-         const formData = req.body
-         const book = new books(formData);
-         book.save()
-                .then(() => res.redirect(`/`))
-         
+    // [POST] /books/create
+    async store(req, res, next) {
+        try {
+            const formData = req.body;
+            // Tạo slug từ bookName nếu không có
+            if (!formData.slug && formData.bookName) {
+                formData.slug = formData.bookName
+                    .toLowerCase()
+                    .replace(/[^\w\s-]/g, '')
+                    .replace(/\s+/g, '-');
+            }
+            await books.create(formData);
+            res.redirect('/');
+        } catch (error) {
+            next(error);
+        }
     }
 
     // [GET] /books/:id/create
-    edit(req, res, next){
-        books.findById(req.params.id)
-                .then(book =>  res.render('books/edit',{
-                    book : mongooseToObject(book)
-                }))
-                .catch(next)
-            }
-        // [PUT] /books/:id
-        update(req, res, next){
-            books.updateOne({
-                _id : req.params.id
-            }, req.body)
-        .then(() => res.redirect('/me/stored/books'))
-        .catch(next)
+    async edit(req, res, next) {
+        try {
+            const book = await books.findById(req.params.id);
+            res.render('books/edit', {
+                book: book
+            });
+        } catch (error) {
+            next(error);
+        }
     }
+    
+    // [PUT] /books/:id
+    async update(req, res, next) {
+        try {
+            await books.updateById(req.params.id, req.body);
+            res.redirect('/me/stored/books');
+        } catch (error) {
+            next(error);
+        }
+    }
+    
     // [DELETE] /books/:id
-    delete(req, res, next){
-        books.deleteOne({
-            _id : req.params.id
-        })
-                .then(() => res.redirect('back') )
-                .catch(next)
+    async delete(req, res, next) {
+        try {
+            await books.deleteById(req.params.id);
+            res.redirect('back');
+        } catch (error) {
+            next(error);
+        }
     }
 }
    

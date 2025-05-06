@@ -1,82 +1,92 @@
 const Book = require('../models/Book');
-const { mutipleMongooseToObject } = require('../../util/mongoose');
+const { multipleToObject } = require('../../util/mysql');
 const jwt = require('jsonwebtoken');
+const path = require('path'); 
+
 class SiteController {
     // [GET] /
-    index(req, res, next) {
-        Book.find({}).sort({
-            createdAt : -1,
-        })
-            .then((books) => {
-                var token = req.cookies.token;
-                var result = jwt.verify(token, 'mk')
-                console.log(result);
-                res.render('home',{
-                    books: mutipleMongooseToObject(books),
-                })
-            })
-            .catch(next);
+    async index(req, res, next) {
+        try {
+            const books = await Book.findAll();
+            // Sắp xếp theo thời gian tạo mới nhất (createdAt giảm dần)
+            books.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+            
+            var token = req.cookies.token;
+            var result = jwt.verify(token, 'mk');
+            console.log(result);
+            
+            res.render('home', {
+                books: books, // Không cần chuyển đổi vì MySQL đã trả về object
+            });
+        } catch (error) {
+            next(error);
+        }
     }
-    showVietNamBooks(req, res, next) {
-        Book.find({
-            catelogy : "Sách Tiếng Việt"
-        })
-            .then((books) => {  
-                res.render('home',{
-                    books: mutipleMongooseToObject(books),
-                })
-                
-            })
-            .catch(next);
+    
+    async showVietNamBooks(req, res, next) {
+        try {
+            // Sử dụng query SQL để lọc theo catelogy
+            const [books] = await Book.findByCatelogy("Sách Tiếng Việt");
+            
+            res.render('home', {
+                books: books,
+            });
+        } catch (error) {
+            next(error);
+        }
     }
-    showEnglishBooks(req, res, next) {
-        Book.find({
-            catelogy : "Sách Tiếng Anh"
-        })
-            .then((books) => {  
-                res.render('home',{
-                    books: mutipleMongooseToObject(books),
-                })
-            })
-            .catch(next);
+    
+    async showEnglishBooks(req, res, next) {
+        try {
+            const books = await Book.findByCatelogy("Sách Tiếng Anh");
+            
+            res.render('home', {
+                books: books,
+            });
+        } catch (error) {
+            next(error);
+        }
     }
-    showAbilitiesBooks(req, res, next) {
-        Book.find({
-            catelogy : "Sách kĩ năng sống"
-        })
-            .then((books) => {  
-                res.render('home',{
-                    books: mutipleMongooseToObject(books),
-                })
-            })
-            .catch(next);
+    
+    async showAbilitiesBooks(req, res, next) {
+        try {
+            const books = await Book.findByCatelogy("Sách kỹ năng sống");
+            
+            res.render('home', {
+                books: books,
+            });
+        } catch (error) {
+            next(error);
+        }
     }
-    showDetectiveBooks(req, res, next) {
-        Book.find({
-            catelogy : "Truyện trinh thám"
-        })
-            .then((books) => {  
-                res.render('home',{
-                    books: mutipleMongooseToObject(books),
-                })
-            })
-            .catch(next);
+    
+    async showDetectiveBooks(req, res, next) {
+        try {
+            const books = await Book.findByCatelogy("Truyện trinh thám");
+            
+            res.render('home', {
+                books: books,
+            });
+        } catch (error) {
+            next(error);
+        }
     }
-    showComicBooks(req, res, next) {
-        Book.find({
-            catelogy : "Truyện tranh"
-        })
-            .then((books) => {  
-                res.render('home',{
-                    books: mutipleMongooseToObject(books),
-                })
-            })
-            .catch(next);
+    
+    async showComicBooks(req, res, next) {
+        try {
+            const books = await Book.findByCatelogy("Truyện tranh");
+            
+            res.render('home', {
+                books: books,
+            });
+        } catch (error) {
+            next(error);
+        }
     }
+    
     showForgetPassword(req, res, next) {
         res.sendFile(path.join(__dirname, '../../views/forgot_password.html'));
     }
-    
 }
 
 module.exports = new SiteController();
